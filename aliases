@@ -1,0 +1,6 @@
+# SSH connections
+alias shdinheirama="ssh root@104.236.223.17"
+
+# Shortcuts
+
+alias reload="source ~/.zshrc" 

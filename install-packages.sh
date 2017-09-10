@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+export EDITOR="vim"
+echo "Setting up mirrors"
 
 desired_mirrors=United_States
 enabled_mirrors=$(
@@ -35,7 +37,6 @@ bash
 bash-completion
 cloc
 cmake
-copyq
 curl
 dbeaver
 dnsmasq
@@ -77,6 +78,8 @@ python_packages=(
 aws-shell
 )
 
+echo "Starting packages installations"
+
 pacaur_install () {
   package=$1
   echo "Installing $package"
@@ -110,3 +113,12 @@ done
 sudo usermod -aG docker "$USER"
 sudo usermod -aG input "$USER"
 sudo chsh "$USER" --shell /bin/zsh
+
+echo "Setting up local files"
+
+mkdir ~/.dotfiles-local
+cp ./aliases ~/.dotfiles-local/aliases
+cp ./gemrc ~/.gemrc
+cp ./gitconfig ~/.gitconfig
+cp ./gitignore ~/.gitignore
+cp ./gitmessage ~/.gitmessage
