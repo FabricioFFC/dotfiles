@@ -1,6 +1,13 @@
 # SSH connections
 alias shdinheirama="ssh root@104.236.223.17"
+alias shvizir="ssh root@162.243.17.211"
+alias shredash="ssh -i ~/.ssh/dentalcremer.pem ubuntu@52.201.149.7"
+alias shxplenty="ssh -i ~/.ssh/dentalcremer.pem ubuntu@52.3.242.26"
+alias shmetabase="ssh -i ~/.ssh/dentalcremer.pem ubuntu@52.204.215.28"
 
 # Shortcuts
-
-alias reload="source ~/.zshrc" 
+alias wscan="sudo iwlist wlp2s0: scan | grep \(Channel"
+alias reload="source ~/.zshrc"
+alias myip="ifconfig | grep wlp2s0 -A 1"
+alias rdocker="sudo systemctl restart docker.service"
+alias open="chromium"

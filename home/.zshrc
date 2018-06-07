@@ -1,13 +1,18 @@
+export PATH=$HOME/bin:/usr/local/bin:/home/fabricio/.gem/ruby/2.4.0/bin:/opt/sonar-scanner/bin:$PATH
+export ANDROID_HOME=~/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools
+export GEM_HOME=~/.gem
+
+export PATH="$PATH:$HOME/.npm/bin"
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:/home/fabricio/.gem/ruby/2.4.0/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/home/fabricio/.oh-my-zsh
+export ZSH=/usr/share/oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -74,11 +79,6 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
+# Include custom aliases
+
+source ~/.dotfiles-local/aliases
